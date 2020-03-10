@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-1 {
+  padding: 20px 40px;
+  width: 100%;
+  height: 657px;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/9eaab89c-8556-4a0b-8f54-64c56e3b153d/PH-en-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+.container-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.nav-menu img {
+  width: 150px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #e50914;
+  color: #fff;
+  padding: 7px 17px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Banner Section */
+.banner {
+  margin: 150px 90px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.banner h3 {
+  font-size: 26px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.banner .emailbox {
+  padding-bottom: 15px;
+}
+
+.banner .emailbox input[type="text"] {
+  height: 60px;
+  width: 67%;
+  border: 1px solid #8c8c8c;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  padding: 0 10px;
+}
+
+.banner .emailbox button {
+  height: 60px;
+  width: 33%;
+  padding: 8px 0 8px 0;
+  border-left: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 3px;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+}
+
+.banner .emailbox button:hover {
+  background: #f40612;
+}
+
+.banner .emailbox button i {
+  padding-left: 10px;
+}
+
+.banner p {
+  font-size: 19.2px;
+  font-weight: 500;
+}
+
+/* Divider */
+.divider {
+  background: #222;
+  width: 100%;
+  height: 8px;
+}
+
+/* Container */
+.container {
+  padding: 20px 40px;
+  width: 100%;
+  height: 390px;
+  background: #000000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container Feature-1 */
+.container .feature-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 70px;
+}
+
+.container .feature-1 h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.container .feature-1 h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.container .feature-1 .h2-feature-2 {
+  font-size: 26px;
+  font-weight: 400;
+  width: 90%;
+}
+
+/* TV */
+
+.tv-show .tv-frame {
+  width: 430px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 690px;
+  padding-left: 40px;
+}
+
+.tv-show .tv-frame-2 {
+  width: 445px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 1520px;
+  padding-left: 12px;
+}
+
+.tv-show video {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 39px;
+}
+
+.tv-show .video-2 {
+  width: 308px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 33px;
+}
+
+/* Container Feature-2 */
+.container .feature-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 50px;
+}
+
+.container .feature-2 h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.container .feature-2 h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* Mobile Stranger Things */
+.mobile-show .stranger-girl {
+  width: 380px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 116vh;
+}
+
+.stranger-card {
+  background: #000;
+  border: 2px solid #404040;
+  display: block;
+  position: absolute;
+  height: 95px;
+  width: 270px;
+  top: 133.6vh;
+  left: 11vh;
+  border-radius: 13px;
+  padding: 8px 12px;
+}
+
+.stranger-card-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stranger-card-flex div:nth-child(1) {
+  padding-right: 15px;
+}
+
+.stranger-card img {
+  width: 50px;
+}
+
+.stranger-card-flex p:nth-child(1) {
+  font-weight: bold;
+  width: 125px;
+}
+
+.stranger-card-flex p:nth-child(2) {
+  font-size: 14.4px;
+  line-height: 25px;
+  color: #0071eb;
+}
+
+/* Frequently Asked Question Section */
+.faq {
+  padding-top: 45px;
+}
+
+.faq h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  padding-bottom: 50px;
+}
+
+.faq a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 21px 57px 21px 31px;
+  background-color: #303030;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 77%;
+}
+
+.faq a:nth-child(6) {
+  margin-bottom: 80px;
+}
+
+.faq a i {
+  float: right;
+}
+
+.container-faq {
+  padding: 20px 40px;
+  width: 100%;
+  height: 819px;
+  background: #000000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FAQ Form Section */
+.faq .emailbox {
+  padding-bottom: 15px;
+}
+
+.faq .emailbox input[type="text"] {
+  height: 60px;
+  width: 52.5%;
+  border: 1px solid #8c8c8c;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  padding: 0 10px;
+}
+
+.faq .emailbox button {
+  height: 60px;
+  width: 24.5%;
+  padding: 8px 0 8px 0;
+  border-left: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 3px;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+}
+
+.faq .emailbox button:hover {
+  background: #f40612;
+}
+
+.faq .emailbox button i {
+  padding-left: 10px;
+}
+
+.faq p {
+  font-size: 19.2px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Footer Section */
+.container-footer {
+  padding: 20px 40px;
+  width: 100%;
+  height: 353px;
+  background: #000000;
+  color: #a6a6a6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-footer .footer-inner-container {
+  padding: 23px 30px 13px 45px;
+}
+
+.container-footer .footer-inner-container .footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container-footer a {
+  text-decoration: none;
+  color: #a6a6a6;
+  line-height: 70px;
+}
+
+.container-footer a:hover {
+  text-decoration: underline;
+}
+
+.container-footer .footer-inner-container .footer div a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #a6a6a6;
+  line-height: 33px;
+}
+
+.container-footer .footer-inner-container .footer div a:hover {
+  text-decoration: underline;
+}
+
+.container-footer .footer-inner-container p {
+  text-transform: capitalize;
+  font-size: 14px;
+  padding-top: 30px;
+}
