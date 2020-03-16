@@ -308,22 +308,72 @@
   background-color: #303030;
   font-size: 26px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+  margin-top: 10px;
   width: 77%;
 }
 
 .faq a:nth-child(6) {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .faq a i {
   float: right;
 }
 
+.answer-1 {
+  display: block;
+  color: #fff;
+  padding: 21px 57px 21px 31px;
+  background-color: #303030;
+  font-size: 26px;
+  margin: 0 auto;
+  width: 77%;
+  text-align: left;
+  display: none;
+}
+
+.answer-2 {
+  display: block;
+  color: #fff;
+  padding: 21px 57px 21px 31px;
+  background-color: #303030;
+  font-size: 26px;
+  margin: 0 auto;
+  width: 77%;
+  text-align: left;
+  display: none;
+}
+
+.answer-3 {
+  display: block;
+  color: #fff;
+  padding: 21px 57px 21px 31px;
+  background-color: #303030;
+  font-size: 26px;
+  margin: 0 auto;
+  width: 77%;
+  text-align: left;
+  display: none;
+}
+
+.answer-4 {
+  display: block;
+  color: #fff;
+  padding: 21px 57px 21px 31px;
+  background-color: #303030;
+  font-size: 26px;
+  margin: 0 auto;
+  width: 77%;
+  text-align: left;
+  /* display: none; */
+}
+
 .container-faq {
   padding: 20px 40px;
   width: 100%;
-  height: 819px;
+  /* height: 819px; */
+  height: auto;
   background: #000000;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -370,7 +420,7 @@
   padding-left: 10px;
 }
 
-.faq p {
+.faq .ready-to-watch {
   font-size: 19.2px;
   font-weight: 500;
   text-align: center;
@@ -422,4 +472,145 @@
   text-transform: capitalize;
   font-size: 14px;
   padding-top: 30px;
+}
+
+/* Screen size for 950px above */
+@media (min-width: 950px) {
+  .banner h1 {
+    font-size: 50px;
+    line-height: 55px;
+    width: 669px;
+    margin: 0 auto;
+    padding: 0 10px 15px 10px;
+    text-align: center;
+  }
+
+  .banner h3 {
+    padding-bottom: 40px;
+  }
+
+  .banner .emailbox {
+    height: 75px;
+    width: 670px;
+    padding: 0 0 15px 0;
+    margin: 0 auto;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 60px;
+    width: 67%;
+  }
+
+  .banner .emailbox button {
+    height: 60px;
+    width: 33%;
+    font-size: 26px;
+  }
+
+  .container-1 {
+    height: 440px;
+  }
+  .container-1 .feature-1 h1 {
+    padding-left: 100px;
+  }
+
+  .container-1 .feature-1 h2 {
+    padding-left: 100px;
+    width: 670px;
+  }
+}
+
+/* Screen size for 1450px above */
+@media (min-width: 1450px) {
+  .banner h1 {
+    font-size: 65px;
+    line-height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .banner h3 {
+    padding-bottom: 26px;
+  }
+
+  .banner .emailbox {
+    width: 740px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 70px;
+  }
+
+  .banner .emailbox button {
+    height: 70px;
+  }
+
+  .container-1 {
+    height: 440px;
+  }
+
+  /* Container-1 Feature-1 */
+  .container-1 .feature-1 {
+    padding-top: 120px;
+    padding-left: 180px;
+    padding-right: 180px;
+    margin: 0 auto;
+  }
+
+  .container-1 .feature-1 h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+
+  .container-1 .feature-1 h2 {
+    width: 570px;
+  }
+
+  /* TV-1 */
+
+  .tv-show .tv-frame {
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 670px;
+    padding-left: 40px;
+    z-index: 1;
+  }
+
+  .tv-show .video-1 {
+    width: 478px;
+    display: block;
+    position: absolute;
+    padding-left: 110px;
+    top: 751px;
+  }
+}
+
+/* Screen size for 1550px above */
+@media (min-width: 1550px) {
+  .container-1 .feature-1 h1 {
+    padding-left: 100px;
+  }
+
+  .container-1 .feature-1 h2 {
+    padding-left: 100px;
+    width: 670px;
+  }
+}
+
+/* Screen size for 1650px above */
+@media (min-width: 1650px) {
+  .container-1 .feature-1 h1 {
+    padding-left: 130px;
+    width: 100%;
+  }
+
+  .container-1 .feature-1 h2 {
+    padding-left: 130px;
+    width: 670px;
+  }
 }
