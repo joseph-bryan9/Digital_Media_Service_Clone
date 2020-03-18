@@ -366,7 +366,7 @@
   margin: 0 auto;
   width: 77%;
   text-align: left;
-  /* display: none; */
+  display: none;
 }
 
 .container-faq {
@@ -604,13 +604,104 @@
 
 /* Screen size for 1650px above */
 @media (min-width: 1650px) {
+  /* 1st Section */
   .container-1 .feature-1 h1 {
-    padding-left: 130px;
+    padding-left: 185px;
     width: 100%;
   }
 
   .container-1 .feature-1 h2 {
-    padding-left: 130px;
+    padding-left: 185px;
     width: 670px;
+  }
+
+  /* 2nd Section, Mobile stranger things */
+  .mobile-stranger-things-container {
+    height: 490px;
+  }
+
+  .mobile-stranger-things-container .feature-2 .mobile-show .stranger-girl {
+    padding-top: 35px;
+    width: 500px;
+    left: 330px;
+  }
+
+  .mobile-stranger-things-container .feature-2 .mobile-show .stranger-card {
+    left: 428px;
+    margin-top: 105px;
+    width: 330px;
+  }
+
+  .mobile-stranger-things-container .feature-2 .stranger-card-texts {
+    width: 580px;
+  }
+
+  .mobile-stranger-things-container .feature-2 .stranger-card-texts h1 {
+    padding-top: 80px;
+  }
+
+  .mobile-stranger-things-container .feature-2 .stranger-card-texts h2 {
+    font-size: 26px;
+    font-weight: 400;
+    width: 90%;
+  }
+
+  /* 3rd Section */
+  .container-2 {
+    height: 490px;
+  }
+  .container-2 .feature-1 {
+    padding: 160px;
+  }
+
+  .container-2 .feature-1 h1 {
+    padding-left: 185px;
+    width: 100%;
+  }
+
+  .container-2 .feature-1 .h2-feature-2 {
+    padding-left: 185px;
+    width: 700px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 570px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 1660px;
+    left: 980px;
+    z-index: 1;
+  }
+
+  .tv-show .video-2 {
+    width: 482px;
+    display: block;
+    position: absolute;
+    padding-left: 149px;
+    top: 1705px;
+  }
+
+  /* FAQ Section */
+  .faq a {
+    width: 44%;
+  }
+
+  .faq .emailbox {
+    padding-top: 30px;
+  }
+
+  .faq .emailbox input[type="text"] {
+    width: 25%;
+  }
+
+  .faq .emailbox button {
+    width: 15%;
+  }
+
+  /* Footer Section */
+  .container-footer .footer-inner-container {
+    width: 55%;
+    margin: 0 auto;
   }
 }
