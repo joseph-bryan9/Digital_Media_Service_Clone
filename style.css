@@ -242,6 +242,7 @@ p {
 
 .stranger-card-texts h1 {
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .stranger-card-texts h2 {
@@ -409,4 +410,357 @@ p {
   font-size: 14px;
   padding-top: 30px;
   color: #757575;
+}
+
+@media (max-width: 1200px) {
+  .nav-menu img {
+    width: 140px;
+  }
+
+  .banner-container {
+    height: 673px;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner-container .banner .emailbox {
+    width: 700px;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 65px;
+  }
+
+  .banner-container .banner .emailbox button {
+    height: 65px;
+  }
+
+  .mobile-show {
+    width: 350px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 465px;
+    bottom: 120px;
+    right: 150px;
+  }
+
+  .stranger-card {
+    padding: 8px 12px;
+    bottom: 250px;
+    width: 310px;
+    left: -70px;
+  }
+
+  .stranger-card-texts {
+    padding-top: 35px;
+    padding-left: 15px;
+    width: 600px;
+  }
+
+  .stranger-card-texts h1 {
+    padding-bottom: 20px;
+  }
+  .stranger-card-texts h2 {
+    width: 500px;
+  }
+
+  .faq .emailbox {
+    width: 700px;
+  }
+
+  .faq .emailbox input[type="text"] {
+    height: 65px;
+  }
+
+  .faq .emailbox button {
+    height: 65px;
+  }
+}
+
+@media (max-width: 1082px) {
+  .feature-1 {
+    height: 290px;
+  }
+
+  .feature-2 {
+    height: 270px;
+  }
+
+  .feature-1 div {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  .feature-1 h2 {
+    width: 490px;
+  }
+
+  .faq a {
+    font-size: 26px;
+    padding: 21px 25px 21px 31px;
+    width: 720px;
+  }
+
+  .faq .emailbox {
+    width: 680px;
+  }
+
+  .tv-show .tv-frame {
+    width: 470px;
+    bottom: 120px;
+  }
+
+  .tv-show .video-1 {
+    width: 340px;
+    bottom: 400px;
+    left: 62px;
+    z-index: -1;
+  }
+
+  .mobile-show {
+    width: 350px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 465px;
+    bottom: 120px;
+    right: 150px;
+  }
+
+  .stranger-card {
+    padding: 8px 12px;
+    bottom: 250px;
+    width: 310px;
+    left: -70px;
+  }
+
+  .stranger-card-texts {
+    padding-top: 35px;
+    padding-left: 15px;
+    width: 600px;
+  }
+
+  .stranger-card-texts h1 {
+    padding-bottom: 20px;
+  }
+  .stranger-card-texts h2 {
+    width: 500px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 500px;
+    bottom: 90px;
+    left: -28px;
+  }
+
+  .tv-show .video-2 {
+    width: 300px;
+    bottom: 425px;
+    left: 70px;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .feature-1 {
+    height: 235px;
+  }
+
+  .feature-2 {
+    height: 270px;
+  }
+
+  .feature-1 div {
+    padding-top: 1px;
+    padding-left: 20px;
+  }
+
+  .feature-1 h2 {
+    width: 400px;
+  }
+
+  .tv-show .tv-frame {
+    width: 420px;
+    bottom: 70px;
+    left: 40px;
+  }
+
+  .tv-show .video-1 {
+    width: 300px;
+    bottom: 320px;
+    left: 98px;
+  }
+
+  .mobile-show {
+    width: 350px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 400px;
+    bottom: 120px;
+    right: 75px;
+  }
+
+  .stranger-card {
+    padding: 8px 12px;
+    bottom: 250px;
+    width: 310px;
+    left: -30px;
+  }
+
+  .stranger-card-texts {
+    position: relative;
+    padding-top: 35px;
+    padding-left: 15px;
+    width: 600px;
+    bottom: 50px;
+  }
+
+  .stranger-card-texts h1 {
+    padding-bottom: 5px;
+    width: 400px;
+  }
+  .stranger-card-texts h2 {
+    width: 500px;
+    width: 380px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 500px;
+    bottom: 50px;
+    left: -28px;
+  }
+
+  .tv-show .video-2 {
+    width: 300px;
+    bottom: 390px;
+    left: 70px;
+  }
+
+  .faq a {
+    width: 670px;
+  }
+}
+
+@media (max-width: 950px) {
+  .nav-menu img {
+    width: 100px;
+    height: 33px;
+  }
+
+  .nav-menu {
+    padding-top: 25px;
+  }
+
+  .nav-menu a {
+    padding: 7px 17px;
+  }
+
+  .banner-container .banner {
+    padding: 130px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-container .banner .emailbox {
+    order: 4;
+  }
+
+  .banner-container .banner p {
+    order: 3;
+    font-size: 23px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .banner-container {
+    height: 720px;
+  }
+
+  .banner-container .banner .emailbox {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 60px;
+    width: 530px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .banner-container .banner .emailbox button {
+    height: 50px;
+    width: 160px;
+    padding: 1px 2px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .container-1 .feature-1 {
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .faq h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .faq a {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 750px;
+  }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq .emailbox {
+    order: 12;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .faq .ready-to-watch {
+    order: 11;
+    font-size: 23px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+
+  .faq .emailbox input[type="text"] {
+    height: 60px;
+    width: 530px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .faq .emailbox button {
+    height: 50px;
+    width: 160px;
+    padding: 1px 2px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
 }
