@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #000;
   font-family: Arial, Helvetica, sans-serif;
@@ -270,6 +276,10 @@ p {
 }
 
 /* FAQ Section */
+.container-faq {
+  margin: 80px 120px;
+}
+
 .faq {
   display: flex;
   flex-direction: column;
@@ -708,8 +718,145 @@ p {
   }
 
   .container-1 .feature-1 {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+  }
+
+  .container-1 {
+    margin: 50px 10px;
+  }
+
+  .feature-1 div {
+    height: 300px;
+  }
+
+  .feature-1 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+  }
+
+  .feature-1 h2 {
+    font-size: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .tv-show .tv-frame {
+    position: relative;
+    width: 600px;
+    bottom: 180px;
+    left: 160px;
+    z-index: -1;
+  }
+
+  .tv-show .video-1 {
+    position: relative;
+    width: 433px;
+    bottom: 540px;
+    left: 240px;
+    z-index: 2;
+  }
+
+  /* Mobile Section */
+  .feature-2 {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+  }
+
+  .mobile-show {
+    order: 2;
+    z-index: -1;
+  }
+
+  .mobile-show .stranger-girl {
+    position: relative;
+    width: 610px;
+    bottom: 100px;
+    left: 160px;
+  }
+
+  .stranger-card {
+    position: relative;
+    padding: 8px 12px;
+    border: 2px solid #404040;
+    border-radius: 15px;
+    background-color: #000;
+    bottom: 255px;
+    width: 410px;
+    left: 250px;
+  }
+
+  .stranger-card .stranger-card-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stranger-card .stranger-card-flex div img {
+    width: 45px;
+  }
+
+  .stranger-card .stranger-card-flex div p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .stranger-card .stranger-card-flex div p:last-child {
+    font-size: 14.4px;
+    font-weight: 600;
+    color: #0071eb;
+    text-align: left;
+  }
+
+  .stranger-card-texts {
+    height: 300px;
+    width: 100%;
+    order: 1;
+  }
+
+  .stranger-card-texts h1 {
+    font-size: 40px;
+    margin-top: 230px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .stranger-card-texts h2 {
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 2nd Section */
+  .tv-show {
+    width: 450px;
+  }
+
+  .tv-show .tv-frame-2 {
+    position: relative;
+    width: 600px;
+    bottom: 130px;
+    left: 160px;
+  }
+
+  .tv-show .video-2 {
+    position: relative;
+    width: 370px;
+    bottom: 540px;
+    left: 270px;
+    z-index: -1;
+  }
+
+  .container-faq {
+    margin: 80px 10px;
   }
 
   .faq h1 {
@@ -762,5 +909,914 @@ p {
   .footer-container .footer-inner-container {
     padding-right: 90px;
     padding-left: 90px;
+  }
+}
+
+@media (max-width: 905px) {
+  .tv-show .tv-frame {
+    bottom: 180px;
+    left: 140px;
+  }
+
+  .tv-show .video-1 {
+    bottom: 540px;
+    left: 220px;
+    z-index: -1;
+  }
+
+  .mobile-show .stranger-girl {
+    bottom: 70px;
+    left: 150px;
+    width: 570px;
+  }
+
+  .stranger-card {
+    bottom: 205px;
+    width: 410px;
+    left: 225px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 600px;
+    bottom: 110px;
+    left: 120px;
+  }
+
+  .tv-show .video-2 {
+    bottom: 520px;
+    left: 230px;
+  }
+}
+
+@media (max-width: 850px) {
+  .banner-container .banner {
+    padding: 130px 100px;
+  }
+
+  .tv-show .tv-frame {
+    bottom: 180px;
+    left: 120px;
+  }
+
+  .tv-show .video-1 {
+    bottom: 540px;
+    left: 200px;
+    z-index: -1;
+  }
+
+  .mobile-show .stranger-girl {
+    bottom: 70px;
+    left: 120px;
+    width: 570px;
+  }
+
+  .stranger-card {
+    bottom: 205px;
+    width: 410px;
+    left: 200px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 600px;
+    bottom: 110px;
+    left: 100px;
+  }
+
+  .tv-show .video-2 {
+    bottom: 520px;
+    left: 210px;
+  }
+
+  .faq a {
+    width: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-container .banner {
+    padding: 130px 10px;
+  }
+
+  .container-1 {
+    margin: 70px 40px;
+  }
+
+  .tv-show .tv-frame {
+    bottom: 180px;
+    left: 50px;
+  }
+
+  .tv-show .video-1 {
+    bottom: 540px;
+    left: 130px;
+  }
+
+  .mobile-show .stranger-girl {
+    bottom: 70px;
+    left: 60px;
+    width: 570px;
+  }
+
+  .stranger-card {
+    bottom: 200px;
+    width: 410px;
+    left: 140px;
+  }
+
+  .stranger-card-texts h1 {
+    margin-top: 200px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 600px;
+    bottom: 110px;
+    left: 45px;
+  }
+
+  .tv-show .video-2 {
+    bottom: 520px;
+    left: 160px;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-left: 70px;
+    padding-right: 220px;
+  }
+}
+
+@media (max-width: 718px) {
+  .nav-menu {
+    padding: 25px 25px;
+  }
+
+  .nav-menu img {
+    width: 115px;
+    height: auto;
+  }
+
+  .nav-menu a {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  .banner-container {
+    height: auto;
+    width: auto;
+  }
+
+  .banner-container .banner {
+    padding: 135px 10px;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .banner-container .banner h3 {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .banner-container .banner .emailbox {
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 48px;
+    width: 75%;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .banner-container .banner .emailbox button {
+    height: 45px;
+    width: 23%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .banner-container .banner p {
+    font-size: 18px;
+    width: 90%;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .container-1 {
+    margin: 40px 10px;
+    height: 580px;
+  }
+
+  .feature-1 h1 {
+    font-size: 40px;
+  }
+
+  .feature-1 h2 {
+    font-size: 20px;
+  }
+
+  .tv-show .tv-frame {
+    width: 600px;
+    bottom: 140px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  .tv-show .video-1 {
+    bottom: 500px;
+    width: 435px;
+    left: 90px;
+  }
+
+  .stranger-card-texts h1 {
+    font-size: 40px;
+    margin-top: 175px;
+  }
+
+  .stranger-card-texts h2 {
+    font-size: 20px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 590px;
+    bottom: 60px;
+    left: 30px;
+  }
+
+  .stranger-card {
+    width: 370px;
+    left: 140px;
+    bottom: 180px;
+  }
+
+  .stranger-card .stranger-card-flex div img {
+    width: 45px;
+  }
+
+  .stranger-card .stranger-card-flex div p:first-child {
+    font-size: 16px;
+  }
+
+  .stranger-card .stranger-card-flex div p:last-child {
+    font-size: 13px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 620px;
+    left: 5px;
+  }
+
+  .tv-show .video-2 {
+    width: 375px;
+    left: 124px;
+    bottom: 530px;
+    z-index: -1;
+  }
+
+  .container-faq {
+    margin: 40px 0px;
+  }
+
+  .faq h1 {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .faq a {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .faq .ready-to-watch {
+    font-size: 18px;
+    width: 75%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .faq .emailbox {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq .emailbox input[type="text"] {
+    height: 50px;
+    width: 75%;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  .faq .emailbox button {
+    height: 45px;
+    width: 23%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-left: 40px;
+    padding-right: 200px;
+  }
+
+  .footer-container .footer-inner-container .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-menu {
+    padding: 25px 25px;
+  }
+
+  .nav-menu img {
+    width: 115px;
+    height: auto;
+  }
+
+  .nav-menu a {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  .banner-container {
+    height: auto;
+    width: auto;
+  }
+
+  .banner-container .banner {
+    padding: 135px 10px;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .banner-container .banner h3 {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .banner-container .banner .emailbox {
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 48px;
+    width: 85%;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .banner-container .banner .emailbox button {
+    height: 45px;
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .banner-container .banner p {
+    font-size: 18px;
+    width: 90%;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .container-1 {
+    margin: 40px 30px;
+    height: 500px;
+  }
+
+  .feature-1 h1 {
+    font-size: 40px;
+  }
+
+  .feature-1 h2 {
+    font-size: 20px;
+  }
+
+  .tv-show .tv-frame {
+    width: 430px;
+    bottom: 100px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  .tv-show .video-1 {
+    bottom: 360px;
+    width: 308px;
+    left: 70px;
+  }
+
+  .stranger-card-texts h1 {
+    font-size: 40px;
+    margin-top: 170px;
+  }
+
+  .stranger-card-texts h2 {
+    font-size: 20px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 440px;
+    bottom: 70px;
+    left: 5px;
+  }
+
+  .stranger-card {
+    width: 300px;
+    left: 75px;
+    bottom: 180px;
+  }
+
+  .stranger-card .stranger-card-flex div img {
+    width: 45px;
+  }
+
+  .stranger-card .stranger-card-flex div p:first-child {
+    font-size: 16px;
+  }
+
+  .stranger-card .stranger-card-flex div p:last-child {
+    font-size: 13px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 440px;
+    bottom: 80px;
+    left: 5px;
+  }
+
+  .tv-show .video-2 {
+    width: 265px;
+    left: 90px;
+    bottom: 380px;
+    z-index: -1;
+  }
+
+  .container-faq {
+    margin: 40px 0px;
+  }
+
+  .faq h1 {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .faq a {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .faq .ready-to-watch {
+    font-size: 18px;
+    width: 75%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .faq .emailbox {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq .emailbox input[type="text"] {
+    height: 50px;
+    width: 75%;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  .faq .emailbox button {
+    height: 45px;
+    width: 23%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-left: 70px;
+    padding-right: 410px;
+  }
+
+  .footer-container .footer-inner-container .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 530px) {
+  .nav-menu {
+    padding: 25px 25px;
+  }
+
+  .nav-menu img {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav-menu a {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  .banner-container {
+    height: auto;
+    width: auto;
+  }
+
+  .banner-container .banner {
+    padding: 60px 10px;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 64px;
+    color: #fff;
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    z-index: 2;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .banner-container .banner h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .banner-container .banner .emailbox {
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 50px;
+    width: 95%;
+    display: block;
+    font-size: 16px;
+    margin: 0 20px;
+    margin-bottom: 15px;
+  }
+
+  .banner-container .banner .emailbox button {
+    height: 45px;
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .banner-container .banner p {
+    font-size: 18px;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .container-1 {
+    margin: 40px 10px;
+    height: 435px;
+  }
+
+  .feature-1 h1 {
+    font-size: 26px;
+  }
+
+  .feature-1 h2 {
+    font-size: 18px;
+  }
+
+  .tv-show .tv-frame {
+    width: 460px;
+    bottom: 155px;
+    left: -1px;
+    z-index: -1;
+  }
+
+  .tv-show .video-1 {
+    bottom: 430px;
+    width: 330px;
+    left: 61px;
+  }
+
+  .stranger-card-texts h1 {
+    font-size: 26px;
+    margin-top: 90px;
+  }
+
+  .stranger-card-texts h2 {
+    font-size: 18px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 460px;
+    bottom: 120px;
+    left: 20px;
+  }
+
+  .stranger-card {
+    width: 300px;
+    left: 90px;
+    bottom: 210px;
+  }
+
+  .stranger-card .stranger-card-flex div img {
+    width: 33px;
+  }
+
+  .stranger-card .stranger-card-flex div p:first-child {
+    font-size: 14px;
+  }
+
+  .stranger-card .stranger-card-flex div p:last-child {
+    font-size: 12.4px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 450px;
+    left: 5px;
+  }
+
+  .tv-show .video-2 {
+    width: 275px;
+    left: 90px;
+    bottom: 390px;
+  }
+
+  .container-faq {
+    margin: 40px 0px;
+  }
+
+  .faq h1 {
+    font-size: 26px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .faq a {
+    width: 100%;
+    font-size: 19px;
+  }
+
+  .faq .ready-to-watch {
+    font-size: 18px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .faq .emailbox {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 5%;
+  }
+
+  .faq .emailbox input[type="text"] {
+    height: 50px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    margin: 0 20px;
+    margin-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  .faq .emailbox button {
+    height: 45px;
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-left: 40px;
+    padding-right: 420px;
+  }
+
+  .footer-container .footer-inner-container .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 405px) {
+  .nav-menu {
+    padding: 25px 20px;
+  }
+
+  .nav-menu img {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav-menu a {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  .banner-container {
+    height: auto;
+    width: auto;
+  }
+
+  .banner-container .banner {
+    padding: 60px 10px;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 64px;
+    color: #fff;
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    z-index: 2;
+  }
+
+  .banner-container .banner h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .banner-container .banner h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .banner-container .banner .emailbox {
+    width: 750px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .banner .emailbox input[type="text"] {
+    height: 50px;
+    width: 45%;
+    display: block;
+    font-size: 16px;
+    margin: 0 20px;
+    margin-bottom: 15px;
+  }
+
+  .banner-container .banner .emailbox button {
+    height: 45px;
+    width: 20%;
+    margin: 0 120px;
+    display: block;
+  }
+
+  .banner-container .banner p {
+    font-size: 18px;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .container-1 {
+    margin: 40px 10px;
+    height: 380px;
+  }
+
+  .feature-1 h1 {
+    font-size: 26px;
+  }
+
+  .feature-1 h2 {
+    font-size: 18px;
+  }
+
+  .tv-show .tv-frame {
+    width: 345px;
+    bottom: 110px;
+    left: -1px;
+    z-index: 2;
+  }
+
+  .tv-show .video-1 {
+    bottom: 319px;
+    width: 250px;
+    left: 45px;
+  }
+
+  .stranger-card-texts h1 {
+    font-size: 26px;
+    margin-top: 90px;
+  }
+
+  .stranger-card-texts h2 {
+    font-size: 18px;
+  }
+
+  .mobile-show .stranger-girl {
+    width: 345px;
+    bottom: 130px;
+    left: 20px;
+  }
+
+  .stranger-card {
+    width: 270px;
+    left: 55px;
+    bottom: 218px;
+  }
+
+  .stranger-card .stranger-card-flex div img {
+    width: 33px;
+  }
+
+  .stranger-card .stranger-card-flex div p:first-child {
+    font-size: 14px;
+  }
+
+  .stranger-card .stranger-card-flex div p:last-child {
+    font-size: 12.4px;
+  }
+
+  .tv-show .tv-frame-2 {
+    width: 320px;
+    left: 20px;
+  }
+
+  .tv-show .video-2 {
+    width: 200px;
+    left: 80px;
+    bottom: 305px;
+  }
+
+  .container-faq {
+    margin: 40px 0px;
+  }
+
+  .faq h1 {
+    font-size: 26px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .faq a {
+    width: 100%;
+    font-size: 19px;
+  }
+
+  .faq .ready-to-watch {
+    font-size: 18px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .faq .emailbox {
+    padding-right: 10%;
+  }
+
+  .faq .emailbox input[type="text"] {
+    height: 50px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    margin: 0 20px;
+    margin-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  .faq .emailbox button {
+    height: 45px;
+    width: 40%;
+    margin: 0 120px;
+    display: block;
+  }
+
+  .footer-container .footer-inner-container {
+    padding-left: 20px;
+    padding-right: 520px;
+  }
+
+  .footer-container .footer-inner-container .footer {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
